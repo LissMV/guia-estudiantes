@@ -17,13 +17,13 @@ const memes = [
     author: 'Venus Valencia',
     profileImage: 'https://i.pravatar.cc/100?img=7',
     memeImage: meme1,
-    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+    comment: 'Los horarios no son tan malos, pero la cosa cambia cuando tus clases terminan a las 12:05 pm y tienes inglés a las 2:30pm. Sin embargo, los de software y derecho están peor, ya que son las 8:00pm y ellos siguen en la U.',
   },
   {
     author: 'José Kuri',
     profileImage: 'https://i.pravatar.cc/100?img=7',
     memeImage: meme2,
-    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+    comment: 'Emprendimiento será de las materias que recuerdes con amor-odio. De hecho, ciclo 2 es muy diferente a ciclo 1 por esa misma razón, ¡suerte!',
   },
   {
     author: 'Ariel Cortez',
@@ -35,13 +35,13 @@ const memes = [
     author: 'Lisseth Mejía',
     profileImage: nosotros1,
     memeImage: meme4,
-    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+    comment: 'Hasta el momento no he tenido clases con Domínguez, pero debo de admitir que me da risa ver como toda la sección de Domi se reune para hacer actividades culturales y academicas.',
   },
   {
     author: 'Abner González',
     profileImage: nosotros2,
     memeImage: meme5,
-    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+    comment: 'Ya es una tradición que cada vez que hay presentaciones de BT, un hombre se tenga que disfrazar de mujer. Debo de destacar que la materia es de las cosas que hace única a la ESEN',
   },
 ]
 </script>

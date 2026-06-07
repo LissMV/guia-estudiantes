@@ -1,12 +1,29 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const abierto = ref(false)
+const dropdown = ref(null)
+
+const cerrarSiFuera = (event) => {
+  if (dropdown.value && !dropdown.value.contains(event.target)) {
+    abierto.value = false
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', cerrarSiFuera)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', cerrarSiFuera)
+})
 </script>
 
 <template>
-  <div class="relative">
-    <button @click="abierto = !abierto" class="hover:text-esen-orange">Descubre</button>
+  <div ref="dropdown" class="relative">
+    <button @click="abierto = !abierto" class="hover:text-esen-orange">
+      Descubre
+    </button>
 
     <div
       v-if="abierto"
@@ -14,8 +31,9 @@ const abierto = ref(false)
     >
       <router-link
         to="/mapa"
-        class="w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
-        >Mapa interactivo
+        class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
+      >
+        Mapa interactivo
       </router-link>
 
       <router-link
@@ -25,9 +43,12 @@ const abierto = ref(false)
         Memes
       </router-link>
 
-      <button class="w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200">
+      <router-link
+        to="/posts"
+        class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
+      >
         Post
-      </button>
+      </router-link>
     </div>
   </div>
 </template>
