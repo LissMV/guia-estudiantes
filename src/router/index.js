@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import MapaView from '@/views/MapaView.vue'
-import AboutUsView from '@/views/AboutUsView.vue'
 import MemesView from '@/views/MemesView.vue'
 import PostView from '@/views/PostView.vue'
 
@@ -23,24 +22,13 @@ const router = createRouter({
       name: 'mapa',
       component: MapaView,
     },
-    {
-      path: '/nosotros',
-      name: 'nosotros',
-      component: AboutUsView,
-    },
+
     {
       path: '/posts',
       name: 'posts',
       component: PostView,
     },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
-    },
+
   ],
   scrollBehavior(to) {
     if (to.hash) {
