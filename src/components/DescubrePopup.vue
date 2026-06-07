@@ -6,30 +6,27 @@ const abierto = ref(false)
 
 <template>
   <div class="relative">
-    <button
-      @click="abierto = !abierto"
-      class="hover:text-blue-600 transition-colors"
-    >
-      Descubre
-    </button>
+    <button @click="abierto = !abierto" class="hover:text-esen-orange">Descubre</button>
 
     <div
       v-if="abierto"
-      class="absolute right-0 top-8 w-48 bg-white border rounded-lg shadow-lg p-2 z-50"
+      class="absolute right-0 top-10 w-48 bg-white border rounded-lg shadow-lg p-2 z-50"
     >
-      <button
-        class="w-full text-left px-3 py-2 rounded hover:bg-gray-100"
-      >Mapa interactivo
-      </button>
+      <router-link
+        to="/mapa"
+        class="w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
+        >Mapa interactivo
+      </router-link>
 
-      <button
-        class="w-full text-left px-3 py-2 rounded hover:bg-gray-100"
-      >Memes
-      </button>
+      <router-link
+        to="/memes"
+        class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
+      >
+        Memes
+      </router-link>
 
-      <button
-        class="w-full text-left px-3 py-2 rounded hover:bg-gray-100"
-      >Post
+      <button class="w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200">
+        Post
       </button>
     </div>
   </div>

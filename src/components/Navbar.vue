@@ -1,15 +1,18 @@
 <script setup>
-import DescubrePopup from '@/components/DescubrePopUp.vue'
+import DescubrePopup from '@/components/DescubrePopup.vue'
 </script>
 
 <template>
-  <nav class="bg-white shadow-md p-4">
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md p-4 z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <a href=""><h1 class="text-xl font-bold">Esenitos.com</h1></a>
+      <router-link to="/" class="text-2xl font-coiny text-esen-orange"> Esenitos.com </router-link>
 
-      <ul class="flex gap-6 items-center">
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">El campus</a></li>
+      <ul class="flex gap-6 items-center text-lg font-spartan">
+        <router-link to="/#about">
+          <li class="hover:text-esen-orange">Sobre nosotros</li>
+        </router-link>
+
+        <li class="hover:text-esen-orange"><a href="#">El campus</a></li>
 
         <li>
           <DescubrePopup />

@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --color-esen-purple: #2c0a71;
+  --color-esen-orange: #d65819;
+  --color-esen-blue: #3976c0;
+  --color-esen-green: #54af49;
+
+  --font-spartan: "League Spartan", sans-serif;
+  --font-google: "Google Sans", sans-serif;
+  --font-coiny: "Coiny", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,3 +1,66 @@
+<script setup>
+import MemeCard from '@/components/MemeCard.vue'
+
+import nosotros1 from '@/assets/img/nosotros/nosotros1.jpeg'
+import nosotros2 from '@/assets/img/nosotros/nosotros2.jpeg'
+import nosotros3 from '@/assets/img/nosotros/nosotros3.jpeg'
+
+
+import meme1 from '@/assets/img/memes/meme1.png'
+import meme2 from '@/assets/img/memes/meme2.png'
+import meme3 from '@/assets/img/memes/meme3.jpeg'
+import meme4 from '@/assets/img/memes/meme4.png'
+import meme5 from '@/assets/img/memes/meme5.png'
+
+const memes = [
+  {
+    author: 'Venus Valencia',
+    profileImage: 'https://i.pravatar.cc/100?img=7',
+    memeImage: meme1,
+    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+  },
+  {
+    author: 'José Kuri',
+    profileImage: 'https://i.pravatar.cc/100?img=7',
+    memeImage: meme2,
+    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+  },
+  {
+    author: 'Ariel Cortez',
+    profileImage: nosotros3,
+    memeImage: meme3,
+    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+  },
+  {
+    author: 'Lisseth Mejía',
+    profileImage: nosotros1,
+    memeImage: meme4,
+    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+  },
+  {
+    author: 'Abner González',
+    profileImage: nosotros2,
+    memeImage: meme5,
+    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+  },
+]
+</script>
+
 <template>
-  
+  <div class="min-h-screen bg-gradient-to-br from-esen-blue via-white to-esen-green/50 py-10">
+    <h1 class="text-4xl font-spartan text-esen-purple font-bold text-center mb-10">
+      Espacio de memes de la ESEN
+    </h1>
+
+    <div class="max-w-lg mx-[400px] space-y-8">
+      <MemeCard
+        v-for="(meme, index) in memes"
+        :key="index"
+        :author="meme.author"
+        :profileImage="meme.profileImage"
+        :memeImage="meme.memeImage"
+        :comment="meme.comment"
+      />
+    </div>
+  </div>
 </template>
