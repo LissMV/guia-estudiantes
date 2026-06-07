@@ -27,7 +27,7 @@ onUnmounted(() => {
 
     <div
       v-if="abierto"
-      class="absolute right-0 top-10 w-48 bg-white border rounded-lg shadow-lg p-2 z-50"
+      class="absolute right-0 top-10 w-48 bg-white border rounded-lg shadow-lg p-2 z-[9999]"
     >
       <router-link
         to="/mapa"

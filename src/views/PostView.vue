@@ -14,7 +14,7 @@ const posts = [
   {
     id: 1,
     title: 'los horarios de la ESEN',
-    category: 'logistica',
+    category: 'Vida académica',
     date: '07 junio 2026',
     readTime: 1,
 
@@ -54,7 +54,7 @@ organiza tu tiempo y no te quedes callado si estás incómodo.
   {
     id: 2,
     title: 'La semana del caos',
-    category: 'Tecnología',
+    category: 'Experiencia estudiantil',
     date: '07 junio 2026',
     readTime: 1,
 
@@ -88,7 +88,7 @@ de vivir la ESEN, no solo de sobrevivir a ella.
   {
     id: 3,
     title: 'Bienestar Total: la materia que te cambia la vida',
-    category: 'Tecnología',
+    category: 'Materias y aprendizaje',
     date: '07 junio 2026',
     readTime: 1,
 
@@ -136,7 +136,7 @@ en práctica el conocimiento.
   {
     id: 4,
     title: 'Lo que debes de saber si no quieres dejar matemáticas',
-    category: 'Tecnología',
+    category: 'Consejos académicos',
     date: '04 junio 2026',
     readTime: 1,
 
@@ -172,7 +172,7 @@ y seguir los consejos de esenitas mayores.
     readTime: 1,
 
     author: 'Abner González',
-    career: 'Ingeniería de Software',
+    career: 'Vida en campus',
 
     authorImage: nosotros2,
 
