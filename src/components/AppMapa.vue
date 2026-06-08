@@ -268,6 +268,21 @@ html, body {
 /* Cuerpo del modal */
 .modal-body {
     padding: 22px 24px 26px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .modal-category-badge {
