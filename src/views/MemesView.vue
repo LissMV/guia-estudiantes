@@ -17,7 +17,7 @@ const memes = [
     author: 'Venus Valencia',
     profileImage: 'https://i.pravatar.cc/100?img=7',
     memeImage: meme1,
-    comment: 'Los horarios no son tan malos, pero la cosa cambia cuando tus clases terminan a las 12:05 pm y tienes inglés a las 2:30pm. Sin embargo, los de software y derecho están peor, ya que son las 8:00pm y ellos siguen en la U.',
+    comment: 'Los horarios no son tan malos, pero la cosa cambia cuando tus clases terminan a las 12:05 pm y tienes Inglés a las 2:30pm. Sin embargo, los de software y derecho están peor, ya que son las 8:00pm y ellos siguen en la U.',
   },
   {
     author: 'José Kuri',
@@ -29,7 +29,7 @@ const memes = [
     author: 'Ariel Cortez',
     profileImage: nosotros3,
     memeImage: meme3,
-    comment: 'Mi primer control fue de 4.7, al principio si me sentí super mal pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+    comment: 'Mi primer control fue de 4.7. Al principio si me sentí bastante mal, pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
   },
   {
     author: 'Lisseth Mejía',

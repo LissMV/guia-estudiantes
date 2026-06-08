@@ -19,7 +19,7 @@ import post5 from '@/assets/img/posts/post5.jpeg'
 const posts = [
   {
     id: 1,
-    title: 'los horarios de la ESEN',
+    title: 'Los horarios de la ESEN',
     category: 'Vida académica',
     date: '07 junio 2026',
     readTime: 1,
@@ -39,14 +39,14 @@ tiempo libre. Algo que no poseerás en tu estadía como esenita.
 </p>
 
 <p class="mt-3">
-  Primero celebrarás al ver solo cuatro materias, en la escuela tenías muchísimas más.
+  Primero celebrarás al ver solo cuatro materias, ya que en la escuela tenías muchísimas más.
 Esto es una trampa. Ese día que ibas en la mañana y regresabas en la noche se
 arruina cuando descubres que añadieron inglés en la tarde, dando poco tiempo para
 estudiar, pero sin dar suficiente con tal de volver a casa.
 </p>
 
 <p class="mt-3">
-  Súmale a esto las reuniones grupales, dónde descubrirás que los peores horarios no
+  Súmale a esto las reuniones grupales, donde descubrirás que los peores horarios no
 los hace el director, los hará Juanito, que tiene todo el día libre y cree que su grupo
 también.
 </p>
