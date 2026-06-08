@@ -4,6 +4,8 @@ import MemeCard from '@/components/MemeCard.vue'
 import nosotros1 from '@/assets/img/nosotros/nosotros1.jpeg'
 import nosotros2 from '@/assets/img/nosotros/nosotros2.jpeg'
 import nosotros3 from '@/assets/img/nosotros/nosotros3.jpeg'
+import nosotros4 from '@/assets/img/nosotros/nosotros4.jpeg'
+import nosotros5 from '@/assets/img/nosotros/nosotros5.jpeg'
 
 
 import meme1 from '@/assets/img/memes/meme1.png'
@@ -15,13 +17,13 @@ import meme5 from '@/assets/img/memes/meme5.png'
 const memes = [
   {
     author: 'Venus Valencia',
-    profileImage: 'https://i.pravatar.cc/100?img=7',
+    profileImage: nosotros4,
     memeImage: meme1,
     comment: 'Los horarios no son tan malos, pero la cosa cambia cuando tus clases terminan a las 12:05 pm y tienes Inglés a las 2:30pm. Sin embargo, los de software y derecho están peor, ya que son las 8:00pm y ellos siguen en la U.',
   },
   {
     author: 'José Kuri',
-    profileImage: 'https://i.pravatar.cc/100?img=7',
+    profileImage: nosotros5,
     memeImage: meme2,
     comment: 'Emprendimiento será de las materias que recuerdes con amor-odio. De hecho, ciclo 2 es muy diferente a ciclo 1 por esa misma razón, ¡suerte!',
   },
