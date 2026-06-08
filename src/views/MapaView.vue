@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Mapa from '@/components/Mapa.vue';
+import Mapa from '@/components/AppMapa.vue';
 
 </script>
 

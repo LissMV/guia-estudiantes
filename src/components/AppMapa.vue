@@ -1,50 +1,50 @@
-
 <template>
-    <div class="container">
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Mapa Campus</h1>
+        <p class="subtitle">Explora la ESEN</p>
+      </div>
 
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h1>Mapa Campus</h1>
-                <p class="subtitle">Explora la ESEN</p>
-            </div>
+      <div v-for="cat in categoriesList" :key="cat.key" class="category">
+        <h2 class="category-title">{{ cat.label }}</h2>
+        <ul class="place-list">
+          <li
+            v-for="place in placesByCategory[cat.key]"
+            :key="place.id"
+            class="place-item"
+            :class="{ active: activeId === place.id }"
+            @click="openModal(place)"
+          >
+            <div class="place-item-name">{{ place.name }}</div>
+            <div class="place-item-desc">{{ place.description }}</div>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-            <div class="category">
-                <h2 class="category-title">Descanso</h2>
-                <ul class="place-list" id="academic-list"></ul>
-            </div>
+    <main class="map-section">
+      <div id="map"></div>
+    </main>
+  </div>
 
-            <div class="category">
-                <h2 class="category-title">Top Vistas</h2>
-                <ul class="place-list" id="cafeteria-list"></ul>
-            </div>
-
-            <div class="category">
-                <h2 class="category-title">Lugares deprimetes</h2>
-                <ul class="place-list" id="study-list"></ul>
-            </div>
-
-            <div class="category">
-                <h2 class="category-title">Atajos</h2>
-                <ul class="place-list" id="recreation-list"></ul>
-            </div>
-        </aside>
-
-        <main class="map-section">
-            <div id="map"></div>
-        </main>
-    </div>
-
-    <div class="modal-overlay" id="modal-overlay">
-        <div class="modal" id="modal">
-            <button class="modal-close" id="modal-close">✕</button>
-            <div class="modal-media" id="modal-media"></div>
-            <div class="modal-body">
-                <div class="modal-category-badge" id="modal-badge"></div>
-                <h2 class="modal-title" id="modal-title"></h2>
-                <p class="modal-desc" id="modal-desc"></p>
-            </div>
+  <!-- Modal -->
+  <div class="modal-overlay" :class="{ visible: modalVisible }" @click.self="closeModal">
+    <div class="modal">
+      <button class="modal-close" @click="closeModal">✕</button>
+      <div class="modal-media">
+        <video v-if="selected?.video" :src="selected.video" autoplay loop muted playsinline />
+        <img v-else-if="selected?.image" :src="selected.image" :alt="selected?.name" />
+      </div>
+      <div class="modal-body">
+        <div class="modal-category-badge">
+          {{ emojiMap[selected?.category] }} {{ categoryLabels[selected?.category] }}
         </div>
+        <h2 class="modal-title">{{ selected?.name }}</h2>
+        <p class="modal-desc">{{ selected?.description }}</p>
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>
@@ -67,7 +67,6 @@ html, body {
     display: flex;
     width: 100%;
     height: 100vh;
-    justify-content: center;
 }
 
 .sidebar {
@@ -313,7 +312,10 @@ html, body {
 </style>
 
 <script setup>
-const L = window.L
+import L from 'leaflet'
+import 'leaflet/dist/leaflet.css'
+import { onMounted, ref, computed } from 'vue'
+import 'leaflet/dist/leaflet.css'
 import MAPA from '@/assets/img/mapa/MAPA.png'
 import depre1 from '@/assets/img/mapa/depre1.jpg'
 import depre2 from '@/assets/img/mapa/depre2.jpeg'
@@ -329,13 +331,7 @@ import delaudiallobby from '@/assets/img/mapa/delaudiallobby.mp4'
 import delpasilloalpicnic from '@/assets/img/mapa/delpasilloalpicnic.mp4'
 import delpicnicalcc from '@/assets/img/mapa/delpicnicalcc.mp4'
 
-
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  console.log('ESTE ES MI COMPONENTE DEL MAPA');
-
-  const places = [
+const places = [
     {
         id: 'place-1',
         name: 'Afuera del CC',
@@ -457,121 +453,81 @@ onMounted(() => {
 ];
 
 const categoryLabels = {
-    academic:   'Lugares para dormir',
-    cafeteria:  'Las mejores vistas',
-    study:      'Lugar depresivo',
-    recreation: 'Atajos y rutas rápidas'
-};
+  academic:   'Lugares para dormir',
+  cafeteria:  'Las mejores vistas',
+  study:      'Lugar depresivo',
+  recreation: 'Atajos y rutas rápidas'
+}
 
 const emojiMap = {
-    academic:   '😴',
-    cafeteria:  '👀',
-    study:      '😭',
-    recreation: '🏃🏻'
-};
+  academic:   '😴',
+  cafeteria:  '👀',
+  study:      '😭',
+  recreation: '🏃🏻'
+}
 
-const MAP_WIDTH  = 1080;
-const MAP_HEIGHT = 643;
+const categoriesList = [
+  { key: 'academic',   label: 'Descanso' },
+  { key: 'cafeteria',  label: 'Top Vistas' },
+  { key: 'study',      label: 'Lugares deprimentes' },
+  { key: 'recreation', label: 'Atajos' },
+]
 
-const map = L.map('map', {
-    crs: L.CRS.Simple,
-    minZoom: -2,
-    maxZoom: 2,
-    dragging: false,
-    zoomControl: false,
-    scrollWheelZoom: false,
-    doubleClickZoom: false,
-    touchZoom: false,
-    keyboard: false
-});
+const placesByCategory = computed(() => {
+  const result = {}
+  categoriesList.forEach(c => {
+    result[c.key] = places.filter(p => p.category === c.key)
+  })
+  return result
+})
 
-const imageBounds = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]]
-
-const mapaOverlay = L.imageOverlay(MAPA, imageBounds)
-
-mapaOverlay.addTo(map)
-
-map.fitBounds(imageBounds)
-
-const overlay    = document.getElementById('modal-overlay');
-const modalMedia = document.getElementById('modal-media');
-const modalBadge = document.getElementById('modal-badge');
-const modalTitle = document.getElementById('modal-title');
-const modalDesc  = document.getElementById('modal-desc');
-const modalClose = document.getElementById('modal-close');
-
-let activeItem = null;
+const modalVisible = ref(false)
+const selected = ref(null)
+const activeId = ref(null)
 
 function openModal(place) {
-    if (place.video) {
-        modalMedia.innerHTML = `<video src="${place.video}" autoplay loop muted playsinline></video>`;
-    } else {
-        modalMedia.innerHTML = `<img src="${place.image}" alt="${place.name}">`;
-    }
-
-    modalBadge.textContent = `${emojiMap[place.category]}  ${categoryLabels[place.category]}`;
-    modalTitle.textContent  = place.name;
-    modalDesc.textContent   = place.description;
-
-    overlay.classList.add('visible');
-
-    if (activeItem) activeItem.classList.remove('active');
-    const el = document.getElementById(`item-${place.id}`);
-    if (el) { el.classList.add('active'); activeItem = el; }
+  selected.value = place
+  activeId.value = place.id
+  modalVisible.value = true
 }
 
 function closeModal() {
-    overlay.classList.remove('visible');
-    if (activeItem) { activeItem.classList.remove('active'); activeItem = null; }
-    const video = modalMedia.querySelector('video');
-    if (video) video.pause();
+  modalVisible.value = false
+  activeId.value = null
 }
 
-modalClose.addEventListener('click', closeModal);
+onMounted(() => {
+  const MAP_WIDTH = 1080
+  const MAP_HEIGHT = 643
 
-overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) closeModal();
-});
+  const map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -2, maxZoom: 2,
+    dragging: false, zoomControl: false,
+    scrollWheelZoom: false, doubleClickZoom: false,
+    touchZoom: false, keyboard: false
+  })
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-});
+  const imageBounds = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]]
+  L.imageOverlay(MAPA, imageBounds).addTo(map)
+  map.fitBounds(imageBounds)
 
-const markers = {};
+  window.addEventListener('resize', () => map.fitBounds(imageBounds))
 
-places.forEach(place => {
+  places.forEach(place => {
     const icon = L.divIcon({
-        html: `<span style="font-size:20px;display:flex;align-items:center;justify-content:center;width:100%;height:100%;">${emojiMap[place.category]}</span>`,
-        iconSize: [38, 38],
-        iconAnchor: [19, 19],
-        className: ''
-    });
+      html: `<span style="font-size:20px;display:flex;align-items:center;justify-content:center;width:100%;height:100%;">${emojiMap[place.category]}</span>`,
+      iconSize: [38, 38],
+      iconAnchor: [19, 19],
+      className: ''
+    })
+    const marker = L.marker([place.lat, place.lng], { icon }).addTo(map)
+    marker.on('click', () => openModal(place))
+  })
+})
 
-    const marker = L.marker([place.lat, place.lng], { icon }).addTo(map);
-    marker.on('click', () => openModal(place));
-    markers[place.id] = marker;
-});
-
-const categories = { academic: [], cafeteria: [], study: [], recreation: [] };
-places.forEach(p => categories[p.category].push(p));
-
-Object.keys(categories).forEach(category => {
-    const listEl = document.getElementById(`${category}-list`);
-    if (!listEl) return;
-
-    categories[category].forEach(place => {
-        const li = document.createElement('li');
-        li.className = 'place-item';
-        li.id = `item-${place.id}`;
-        li.innerHTML = `
-            <div class="place-item-name">${place.name}</div>
-            <div class="place-item-desc">${place.description}</div>
-        `;
-        li.addEventListener('click', () => openModal(place));
-        listEl.appendChild(li);
-    });
-});
-
-
+// cerrar con Escape
+onMounted(() => {
+  window.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal() })
 })
 </script>
