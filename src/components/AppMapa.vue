@@ -310,6 +310,7 @@ html, body {
     font-size: 15px;
     color: #6b7280;
     line-height: 1.6;
+    padding-bottom: 16px;
 }
 
 @media (max-width: 700px) {
@@ -451,7 +452,7 @@ const places = [
         id: 'place-12',
         name: 'Reproducciones',
         category: 'study',
-        description: 'Luego de tu primer examen de matemáticas, esperas con miedo el día en el que te entreguen tus resultados. No obstante, lo más común es que pasadas unas semanas el profesor diga al final de su clase: (pueden ir por sus controles a reproducciones). Y de repente, ese lugar que parecía ser solo una sala de impresiones se vuelve un verdadero terror. Sea que vengas a traer tu evaluación o a escanear un documento, lo primero que verás al entrar será una pila de exámenes con notas desde cero a tres, si hay muchísima suerte quizás veas algún nueve entre todos esos papeles, aunque es poco probable que sea tuyo',
+        description: 'Luego de tu primer examen de matemáticas, esperas con miedo el día en el que te entreguen tus resultados. No obstante, lo más común es que pasadas unas semanas el profesor diga al final de su clase: (pueden ir por sus controles a reproducciones). Y de repente, ese lugar que parecía ser solo una sala de impresiones se vuelve un verdadero terror. Sea que vengas a traer tu evaluación o a escanear un documento, lo primero que verás al entrar será una pila de exámenes con notas desde cero a tres, si hay muchísima suerte quizás veas algún nueve entre todos esos papeles, aunque es poco probable que sea tuyo.',
         image: depre1,
         lat: 245,
         lng: 665

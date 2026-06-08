@@ -7,8 +7,14 @@ import BlogContent from '@/components/BlogContent.vue'
 import nosotros3 from '@/assets/img/nosotros/nosotros3.jpeg'
 import nosotros1 from '@/assets/img/nosotros/nosotros1.jpeg'
 import nosotros2 from '@/assets/img/nosotros/nosotros2.jpeg'
+import nosotros4 from '@/assets/img/nosotros/nosotros4.jpeg'
+import nosotros5 from '@/assets/img/nosotros/nosotros5.jpeg'
 
 import post1 from '@/assets/img/posts/post1.jpeg'
+import post2 from '@/assets/img/posts/post2.jpeg'
+import post3 from '@/assets/img/posts/post3.jpeg'
+import post4 from '@/assets/img/posts/post4.jpeg'
+import post5 from '@/assets/img/posts/post5.jpeg'
 
 const posts = [
   {
@@ -21,9 +27,9 @@ const posts = [
     author: 'José Kuri',
     career: 'Derecho',
 
-    authorImage: 'https://i.pravatar.cc/150?img=1',
+    authorImage: nosotros5,
 
-    coverImage: 'https://picsum.photos/1200/600',
+    coverImage: post2,
 
     content: `
 <p>
@@ -63,7 +69,7 @@ organiza tu tiempo y no te quedes callado si estás incómodo.
 
     authorImage: nosotros3,
 
-    coverImage: 'https://picsum.photos/1200/601',
+    coverImage: post3,
 
     content: `
 <p>
@@ -95,9 +101,9 @@ de vivir la ESEN, no solo de sobrevivir a ella.
     author: 'Venus Valencia',
     career: 'Ingeniería de Negocios',
 
-    authorImage: nosotros3,
+    authorImage: nosotros4,
 
-    coverImage: 'https://picsum.photos/1200/601',
+    coverImage: post4,
 
     content: `
 <p>
@@ -167,16 +173,16 @@ y seguir los consejos de esenitas mayores.
   {
     id: 5,
     title: 'La comida de la cafetería',
-    category: 'Tecnología',
+    category: 'Vida en campus',
     date: '04 junio 2026',
     readTime: 1,
 
     author: 'Abner González',
-    career: 'Vida en campus',
+    career: 'Ingeniería de Software',
 
     authorImage: nosotros2,
 
-    coverImage: post1,
+    coverImage: post5,
 
     content: `
 <p>

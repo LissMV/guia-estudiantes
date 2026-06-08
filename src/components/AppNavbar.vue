@@ -8,6 +8,9 @@ import DescubrePopup from '@/components/DescubrePopup.vue'
       <router-link to="/" class="text-2xl font-coiny text-esen-orange"> Esenitos.com </router-link>
 
       <ul class="flex gap-6 items-center text-lg font-spartan">
+         <router-link to="/#vida_estudiantil">
+          <li class="hover:text-esen-orange">Vida estudiantil</li>
+        </router-link>
         <router-link to="/#about">
           <li class="hover:text-esen-orange">Sobre nosotros</li>
         </router-link>

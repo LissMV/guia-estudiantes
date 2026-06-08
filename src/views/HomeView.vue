@@ -25,7 +25,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
         muchas actividades que puedes hacer aparte de encerrarte en el CC. <br />
         Por esa razón, hemos creado esta guía, para que puedas ver todas las cosas emocionantes que
         hay en el campus. Además, cada ciclo y materia te ofrecen una experiencia diferente y
-        esperamos que esta pagina web te ayude a ver que significa ser un Esenita.
+        esperamos que esta pagina web te ayude a ver que significa ser un esenita.
       </p>
     </div>
   </section>
@@ -67,7 +67,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
         <!-- 3 -->
         <div class="group text-center w-72">
           <img
-            src="@/assets/img/nosotros/nosotros1.jpeg"
+            src="@/assets/img/nosotros/nosotros4.jpeg"
             class="w-72 h-80 object-cover rounded-2xl shadow-lg transform transition duration-300 group-hover:scale-105"
           />
           <h3 class="mt-3 font-bold text-esen-purple text-lg font-spartan">Venus Valencia</h3>
@@ -76,10 +76,10 @@ import homeCollague from '@/assets/img/HomeCollague.png'
       </div>
 
       <div class="grid sm:grid-cols-2 gap-8 justify-items-center mt-8">
-      <!-- 4 -->
+        <!-- 4 -->
         <div class="group text-center w-72">
           <img
-            src="@/assets/img/nosotros/nosotros1.jpeg"
+            src="@/assets/img/nosotros/nosotros5.jpeg"
             class="w-72 h-80 object-cover rounded-2xl shadow-lg transform transition duration-300 group-hover:scale-105"
           />
           <h3 class="mt-3 font-bold text-esen-purple text-lg font-spartan">José Kuri</h3>
@@ -98,4 +98,77 @@ import homeCollague from '@/assets/img/HomeCollague.png'
       </div>
     </div>
   </section>
+
+  <section id="campus-life" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Galería -->
+        <div class="grid grid-cols-2 gap-4">
+          <img
+            src="@/assets/img/vida_esen/esen3.jpeg"
+            class="rounded-2xl shadow-lg h-48 w-full object-cover"
+          />
+          <img
+            src="@/assets/img/vida_esen/esen2.jpeg"
+            class="rounded-2xl shadow-lg h-48 w-full object-cover"
+          />
+          <img
+            src="@/assets/img/vida_esen/esen1.jpeg"
+            class="rounded-2xl shadow-lg h-48 w-full object-cover"
+          />
+          <img
+            src="@/assets/img/vida_esen/esen4.jpeg"
+            class="rounded-2xl shadow-lg h-48 w-full object-cover"
+          />
+        </div>
+
+        <!-- Texto -->
+        <div id="vida_estudiantil" class="text-justify">
+          <h2 class="text-4xl font-bold text-esen-blue font-spartan mb-6">La vida en el campus</h2>
+
+          <p class="text-gray-700 leading-relaxed font-google text-lg">
+            La ESEN es mucho más que aulas y tareas. Su campus te ofrece una experiencia rodeado de
+            naturaleza ¡incluso puedes ver animales! Por otro lado, Si hay algo que amamos de
+            nuestra universidad son las amistades que llegas a hacer. Conectar con alumnos de otros
+            años y recibir su apoyo es muy afortunado. Eso te demuestra que no todo es semana 5 y
+            11, te mereces darte un tiempo para disfrutar.
+          </p>
+
+          <p class="text-gray-700 leading-relaxed font-google text-lg mt-4">
+            Además, tienes la oportunidad de experimentar los miércoles de bienestar. Son
+            actividades que organiza dirección estudiantil, con el objetivo de desconectarte un
+            rato. Sin duda alguna, el campus ofrece oportunidades para hacer amigos, desarrollar
+            nuevas habilidades y disfrutar de una experiencia universitaria completa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-esen-purple text-white py-8 mt-10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="font-spartan text-xl font-semibold mb-3">Créditos y referencias</h3>
+
+      <p class="text-gray-300 font-google text-sm">
+        Las fotografías y videos puestos en está guía no oficial han sido tomadas por el equipo
+        desarrollador.
+      </p>
+
+       <p class="text-gray-300 font-google text-sm mt-2">
+        Las fotografías grupales de las actividades de bienestar son por parte del equipo de dirección estudiantil.
+      </p>
+
+      <p class="text-gray-300 font-google text-sm mt-2">
+        La fotografía del campus para el mapa interactivo fue obtenida del sitio web oficial de la
+        ESEN.
+        <a
+          href="https://www.esen.edu.sv/acerca-de-la-esen/"
+          target="_blank"
+          class="text-esen-orange hover:underline"
+        >
+          Ver fuente
+        </a>
+      </p>
+    </div>
+  </footer>
 </template>

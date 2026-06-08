@@ -47,7 +47,7 @@ onUnmounted(() => {
         to="/posts"
         class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
       >
-        Post
+        Blogs
       </router-link>
     </div>
   </div>
