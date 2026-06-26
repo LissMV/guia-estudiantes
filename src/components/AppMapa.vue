@@ -379,7 +379,7 @@ const places = [
         id: 'place-4',
         name: 'El auditorio',
         category: 'study',
-        description: 'Muy posiblemente la primera aula a la que asistirás en la ESEN durante tu semana de orientación, y desde ese momento sabrás el tipo de clases que se dan en ese lugar; lecturas poco comprensibles como emprendimiento y charlas larguísimas en mitad de la noche son algunas de las sorpresas que te esperan en este sitio. Claro, sin olvidar los exámenes que se realizan ahí, pero sobre todas las cosas es el lugar en el que tendrás que abandonar tu vergüenza cuando debas ponerte un vestido o pintarte por completo para las obras de teatro de Liderazgo y Bienestar Total.',
+        description: 'Muy posiblemente la primera aula a la que asistirás en la ESEN durante tu semana de orientación, y desde ese momento sabrás el tipo de clases que se dan en ese lugar; clases poco comprensibles como emprendimiento y charlas larguísimas en mitad de la noche son algunas de las sorpresas que te esperan en este sitio. Claro, sin olvidar los exámenes que se realizan ahí, pero sobre todas las cosas es el lugar en el que tendrás que abandonar tu vergüenza cuando debas ponerte un vestido o pintarte por completo para las obras de teatro de Liderazgo y Bienestar Total.',
         image: depre3,
         lat: 295,
         lng: 790
@@ -405,7 +405,7 @@ const places = [
     },
     {
         id: 'place-7',
-        name: 'Plaza las banderas',
+        name: 'Plaza de las Banderas',
         category: 'cafeteria',
         description: 'Área para difrutar de una linda vista',
         image: vista2,
@@ -414,7 +414,7 @@ const places = [
     },
     {
         id: 'place-8',
-        name: 'Plaza legorreta',
+        name: 'Plaza Legorreta',
         category: 'cafeteria',
         description: 'Área para difrutar de una linda vista',
         image: vista3,
@@ -441,7 +441,7 @@ const places = [
     },
     {
         id: 'place-11',
-        name: 'De la cafe a la legorreta',
+        name: 'De la cafe a la Legorreta',
         category: 'recreation',
         description: 'Manera para llegar más rapido a la legorreta',
         video: delacafealalego,
@@ -452,16 +452,16 @@ const places = [
         id: 'place-12',
         name: 'Reproducciones',
         category: 'study',
-        description: 'Luego de tu primer examen de matemáticas, esperas con miedo el día en el que te entreguen tus resultados. No obstante, lo más común es que pasadas unas semanas el profesor diga al final de su clase: (pueden ir por sus controles a reproducciones). Y de repente, ese lugar que parecía ser solo una sala de impresiones se vuelve un verdadero terror. Sea que vengas a traer tu evaluación o a escanear un documento, lo primero que verás al entrar será una pila de exámenes con notas desde cero a tres, si hay muchísima suerte quizás veas algún nueve entre todos esos papeles, aunque es poco probable que sea tuyo.',
+        description: 'Luego de tu primer examen de matemáticas, esperas con miedo el día en el que te entreguen tus resultados. No obstante, lo más común es que pasadas unas semanas el profesor diga al final de su clase: "pueden ir por sus controles a reproducciones". Y de repente, ese lugar que parecía ser solo una sala de impresiones se vuelve un verdadero terror. Sea que vengas a traer tu evaluación o a escanear un documento, lo primero que verás al entrar será una pila de exámenes con notas desde cero a tres, si hay muchísima suerte quizás veas algún nueve entre todos esos papeles, aunque es poco probable que sea tuyo.',
         image: depre1,
         lat: 245,
         lng: 665
     },
     {
         id: 'place-13',
-        name: 'El olimpo',
+        name: 'El Olimpo',
         category: 'study',
-        description: 'En la antigüedad se decía que en el monte Olimpo habitaban los dioses griegos, en la actualidad, se sabe que ahí encontrarás a los rectores de cada carrera. Este sitio, si bien no es deprimente por sí solo, de hecho, siendo bastante bonito, suele ser un lugar que no quieres frecuentar. Pues eso significa que has venido a hablar con los rectores de tu carrera, ya sea con tal de levantar una queja, responder dudas de extrema importancia o si ya estás en muchos problemas, para pedir orientación o intentar escapar de esta universidad.',
+        description: 'En la antigüedad se decía que en el monte Olimpo habitaban los dioses griegos, en la actualidad, se sabe que ahí encontrarás a los decanos de cada carrera. Este sitio, si bien no es deprimente por sí solo, de hecho, siendo bastante bonito, suele ser un lugar que no quieres frecuentar. Pues eso significa que has venido a hablar con los rectores de tu carrera, ya sea con tal de levantar una queja, responder dudas de extrema importancia o si ya estás en muchos problemas, para pedir orientación o intentar escapar de esta universidad.',
         image: depre2,
         lat: 260,
         lng: 495

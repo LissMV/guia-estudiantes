@@ -13,27 +13,31 @@ import homeCollague from '@/assets/img/HomeCollague.png'
     </div>
   </section>
 
-  <section class="mt-8">
+  <section class="mt-[100px]">
     <div
-      class="text-justify max-w-5xl mx-auto border border-esen-blue rounded-xl p-3 outline-3 outline-offset-4 outline-esen-purple"
+      class="text-justify max-w-7xl mx-auto border border-esen-blue rounded-xl p-3 outline-3 outline-offset-4 outline-esen-purple"
     >
-      <p class="font-google">
-        Esta es una guía no oficial creada específicamente para ti, ¡Bienvenido a la ESEN! <br />
-        Esperamos que la pases increíble y, sobre todo, que encuentres el apoyo necesario para
+      <div class="font-google space-y-4 text-xl">
+      <p>Esta es una guía no oficial creada específicamente para ti. ¡Bienvenido a la ESEN!</p>
+      <p>
+         Esperamos que la pases increíble y, sobre todo, que encuentres el apoyo necesario para
         iniciar esta nueva etapa. Para nosotros, ser universitarios no solo significa estudiar todo
         el tiempo. Tienes el derecho de divertirte y disfrutar estos 5 años. Para tu suerte, hay
-        muchas actividades que puedes hacer aparte de encerrarte en el CC. <br />
+        muchas actividades que puedes hacer aparte de encerrarte en el CC.
+      </p>
+      <p>
         Por esa razón, hemos creado esta guía, para que puedas ver todas las cosas emocionantes que
         hay en el campus. Además, cada ciclo y materia te ofrecen una experiencia diferente y
-        esperamos que esta pagina web te ayude a ver que significa ser un esenita.
+        esperamos que esta página web te ayude a ver que significa ser un esenita.
       </p>
+      </div>
     </div>
   </section>
 
   <!-- Sobre Nosotros -->
   <section
     id="about"
-    class="min-h-screen bg-gradient-to-br from-esen-blue/40 via-white to-esen-orange/30 py-8 mt-10 scroll-mt-24"
+    class="min-h-screen bg-gradient-to-br from-esen-blue/40 via-white to-esen-orange/30 py-8 mt-[100px] scroll-mt-24"
   >
     <div class="text-center mb-12">
       <h1 class="text-4xl font-bold text-esen-blue font-spartan">
@@ -127,7 +131,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
           <h2 class="text-4xl font-bold text-esen-blue font-spartan mb-6">La vida en el campus</h2>
 
           <p class="text-gray-700 leading-relaxed font-google text-lg">
-            La ESEN es mucho más que aulas y tareas. Su campus te ofrece una experiencia rodeado de
+            La ESEN es mucho más que aulas y tareas. Su campus te ofrece una experiencia rodeada de
             naturaleza ¡incluso puedes ver animales! Por otro lado, Si hay algo que amamos de
             nuestra universidad son las amistades que llegas a hacer. Conectar con alumnos de otros
             años y recibir su apoyo es muy afortunado. Eso te demuestra que no todo es semana 5 y
@@ -136,7 +140,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
 
           <p class="text-gray-700 leading-relaxed font-google text-lg mt-4">
             Además, tienes la oportunidad de experimentar los miércoles de bienestar. Son
-            actividades que organiza dirección estudiantil, con el objetivo de desconectarte un
+            actividades que organiza Dirección Estudiantil, con el objetivo de desconectarte un
             rato. Sin duda alguna, el campus ofrece oportunidades para hacer amigos, desarrollar
             nuevas habilidades y disfrutar de una experiencia universitaria completa.
           </p>
@@ -155,7 +159,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
       </p>
 
        <p class="text-gray-300 font-google text-sm mt-2">
-        Las fotografías grupales de las actividades de bienestar son por parte del equipo de dirección estudiantil.
+        Las fotografías grupales de las actividades de bienestar son por parte del equipo de Dirección Estudiantil.
       </p>
 
       <p class="text-gray-300 font-google text-sm mt-2">

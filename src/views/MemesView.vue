@@ -37,13 +37,13 @@ const memes = [
     author: 'Lisseth Mejía',
     profileImage: nosotros1,
     memeImage: meme4,
-    comment: 'Hasta el momento no he tenido clases con Domínguez, pero debo de admitir que me da risa ver como toda la sección de Domi se reune para hacer actividades culturales y academicas.',
+    comment: 'Hasta el momento no he tenido clases con Domínguez, pero debo de admitir que me da risa ver como toda la sección de Domi se reune para hacer actividades culturales y académicas.',
   },
   {
     author: 'Abner González',
     profileImage: nosotros2,
     memeImage: meme5,
-    comment: 'Ya es una tradición que cada vez que hay presentaciones de BT, un hombre se tenga que disfrazar de mujer. Debo de destacar que la materia es de las cosas que hace única a la ESEN',
+    comment: 'Ya es una tradición que cada vez que hay presentaciones de BT, un hombre se tenga que disfrazar de mujer. Debo de destacar que la materia es de las cosas que hace única a la ESEN.',
   },
 ]
 </script>
