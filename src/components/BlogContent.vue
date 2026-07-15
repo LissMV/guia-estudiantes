@@ -1,6 +1,6 @@
 <template>
-  <main class="flex-1 h-full overflow-y-auto">
-    <article class="max-w-4xl mx-auto p-10">
+  <main class="flex-1 h-full overflow-y-auto scrolling-touch">
+    <article class="max-w-4xl mx-auto p-6 sm:p-10">
 
       <!-- Categoría -->
       <span

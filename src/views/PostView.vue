@@ -216,9 +216,9 @@ const changePost = (post) => {
 </script>
 
 <template>
-  <div class="bg-gray-50 flex h-[calc(100vh-4rem)] overflow-hidden">
+  <!-- Reemplazamos h-[calc(100vh-4rem)] por una propiedad más compatible y segura para Edge -->
+  <div class="bg-gray-50 flex flex-col md:flex-row min-h-screen md:h-[calc(100vh-4.1rem)] w-full overflow-hidden">
     <BlogSidebar :posts="posts" :selectedPost="selectedPost" @change-post="changePost" />
-
-    <BlogContent :post="selectedPost" />
+    <BlogContent :post="selectedPost" class="flex-1 overflow-y-auto" />
   </div>
 </template>

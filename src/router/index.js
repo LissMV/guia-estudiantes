@@ -4,6 +4,8 @@ import MapaView from '@/views/MapaView.vue'
 import MemesView from '@/views/MemesView.vue'
 import PostView from '@/views/PostView.vue'
 import BookReviewView from '@/views/BookReviewView.vue'
+// 1. Importa la nueva vista
+import ComunicacionView from '@/views/ComunicacionView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,19 +25,22 @@ const router = createRouter({
       name: 'mapa',
       component: MapaView,
     },
-
     {
       path: '/posts',
       name: 'posts',
       component: PostView,
     },
-
     {
       path: '/reviews',
       name: 'reviews',
       component: BookReviewView,
     },
-
+    // 2. Agrega la ruta de la nueva sección
+    {
+      path: '/comunicacion',
+      name: 'comunicacion',
+      component: ComunicacionView,
+    },
   ],
   scrollBehavior(to) {
     if (to.hash) {
