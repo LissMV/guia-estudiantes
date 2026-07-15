@@ -49,6 +49,12 @@ onUnmounted(() => {
       >
         Blogs
       </router-link>
+      <router-link
+        to="/reviews"
+        class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
+      >
+        Libros reseñados
+      </router-link>
     </div>
   </div>
 </template>
