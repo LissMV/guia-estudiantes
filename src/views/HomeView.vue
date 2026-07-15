@@ -18,7 +18,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
       class="text-justify max-w-7xl mx-auto p-3"
     >
       <div class="font-google space-y-4 text-xl">
-      <p>Esta es una guía no oficial creada específicamente para ti. ¡Bienvenido a la ESEN!</p>
+      <p>¡Bienvenido a la ESEN! Esta es una guía no oficial creada específicamente para ti</p>
       <p>
          Esperamos que la pases increíble y, sobre todo, que encuentres el apoyo necesario para
         iniciar esta nueva etapa. Para nosotros, ser universitarios no solo significa estudiar todo
