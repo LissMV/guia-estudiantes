@@ -10,23 +10,23 @@ defineEmits(['back'])
 </script>
 
 <template>
-  <section class="max-w-6xl mx-auto py-20 px-6">
+  <section class="max-w-6xl mx-auto py-10 px-6">
     <!-- Botón volver -->
     <button
       @click="$emit('back')"
-      class="font-google text-sky-600 hover:text-sky-800 transition mb-8 flex items-center gap-2"
+      class="font-google text-esen-blue hover:text-esen-purple transition mb-8 flex items-center gap-2"
     >
       ← Volver a las reseñas
     </button>
 
     <!-- Título -->
-    <h1 class="font-coiny text-5xl text-center text-sky-700 mb-10">
+    <h1 class="font-coiny text-5xl text-esen-blue mb-10">
       {{ book.title }}
     </h1>
 
     <!-- Información del libro -->
     <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 mb-12">
-      <h2 class="font-coiny text-3xl text-sky-600 mb-6">Información del libro</h2>
+      <h2 class="font-spartan text-3xl text-esen-orange font-semibold mb-6">Información del libro</h2>
 
       <div class="grid md:grid-cols-2 gap-6 font-google">
         <div>
@@ -54,7 +54,7 @@ defineEmits(['back'])
 
       <!-- Reseña -->
       <div class="lg:col-span-2">
-        <h2 class="font-coiny text-3xl text-sky-600 mb-6">{{ book.title_Review }}</h2>
+        <h2 class="font-spartan text-3xl text-esen-orange font-semibold mb-6">{{ book.title_Review }}</h2>
 
         <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-8">
           <div class="font-google text-gray-700 leading-8 text-justify space-y-6">

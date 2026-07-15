@@ -24,7 +24,7 @@ defineEmits(["open"]);
     <div class="p-5 flex flex-col flex-1">
 
       <h3
-        class="font-coiny text-2xl text-sky-700 mb-4 leading-tight"
+        class="font-spartan text-xl text-esen-green mb-4 leading-tight font-semibold"
       >
         {{ book.title }}
       </h3>
@@ -50,7 +50,7 @@ defineEmits(["open"]);
 
       <button
         @click="$emit('open', book)"
-        class="mt-6 bg-sky-600 hover:bg-sky-700 text-white font-google font-medium py-2 rounded-xl transition"
+        class="mt-6 bg-esen-blue hover:bg-esen-purple text-white font-google font-medium py-2 rounded-xl transition"
       >
         Ver reseña →
       </button>
