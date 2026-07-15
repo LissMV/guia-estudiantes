@@ -15,7 +15,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
 
   <section class="mt-[100px]">
     <div
-      class="text-justify max-w-7xl mx-auto border border-esen-blue rounded-xl p-3 outline-3 outline-offset-4 outline-esen-purple"
+      class="text-justify max-w-7xl mx-auto p-3"
     >
       <div class="font-google space-y-4 text-xl">
       <p>Esta es una guía no oficial creada específicamente para ti. ¡Bienvenido a la ESEN!</p>
