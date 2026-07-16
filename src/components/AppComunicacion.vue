@@ -22,7 +22,7 @@ defineProps({
       <!-- Área de Contenido -->
       <div>
         <!-- Metadatos -->
-        <div class="flex items-center gap-3 text-xs font-spartan text-gray-400 mb-4 pl-2">
+        <div class="flex items-center gap-3 text-md font-spartan text-gray-400 mb-4 pl-2">
           <span>{{ texto.fecha }}</span>
           <span>•</span>
           <span>Escrito por {{ texto.autor }}</span>
@@ -34,7 +34,7 @@ defineProps({
         </h2>
 
         <!-- Subtítulo / Temática -->
-        <p class="text-sm font-medium text-esen-orange mb-6 italic">
+        <p class="text-xl font-google text-esen-blue mb-6">
           {{ texto.subtitulo }}
         </p>
 
