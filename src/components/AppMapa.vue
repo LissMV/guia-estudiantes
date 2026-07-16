@@ -461,7 +461,7 @@ const places = [
         id: 'place-13',
         name: 'El Olimpo',
         category: 'study',
-        description: 'En la antigüedad se decía que en el monte Olimpo habitaban los dioses griegos, en la actualidad, se sabe que ahí encontrarás a los decanos de cada carrera. Este sitio, si bien no es deprimente por sí solo, de hecho, siendo bastante bonito, suele ser un lugar que no quieres frecuentar. Pues eso significa que has venido a hablar con los rectores de tu carrera, ya sea con tal de levantar una queja, responder dudas de extrema importancia o si ya estás en muchos problemas, para pedir orientación o intentar escapar de esta universidad.',
+        description: 'En la antigüedad se decía que en el monte Olimpo habitaban los dioses griegos, en la actualidad, se sabe que ahí encontrarás a los decanos de cada carrera. Este sitio, si bien no es deprimente por sí solo, de hecho, siendo bastante bonito, suele ser un lugar que no quieres frecuentar. Pues eso significa que has venido a hablar el decano de tu carrera, ya sea con tal de levantar una queja, responder dudas de extrema importancia o si ya estás en muchos problemas, para pedir orientación o intentar escapar de esta universidad.',
         image: depre2,
         lat: 260,
         lng: 495

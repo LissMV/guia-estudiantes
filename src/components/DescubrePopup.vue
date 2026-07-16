@@ -47,7 +47,7 @@ onUnmounted(() => {
         to="/posts"
         class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
       >
-        Blogs
+        Blog
       </router-link>
       <router-link
         to="/reviews"
@@ -61,6 +61,12 @@ onUnmounted(() => {
         class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
       >
         Comunicación Personal
+      </router-link>
+      <router-link
+        to="/entrevista"
+        class="block w-full text-left hover:text-esen-blue px-3 py-2 rounded hover:bg-gray-200"
+      >
+        Entrevista
       </router-link>
     </div>
   </div>

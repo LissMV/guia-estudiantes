@@ -4,7 +4,7 @@ import MapaView from '@/views/MapaView.vue'
 import MemesView from '@/views/MemesView.vue'
 import PostView from '@/views/PostView.vue'
 import BookReviewView from '@/views/BookReviewView.vue'
-// 1. Importa la nueva vista
+import EntrevistaView from '@/views/EntrevistaView.vue'
 import ComunicacionView from '@/views/ComunicacionView.vue'
 
 const router = createRouter({
@@ -24,6 +24,11 @@ const router = createRouter({
       path: '/mapa',
       name: 'mapa',
       component: MapaView,
+    },
+    {
+      path: '/entrevista',
+      name: 'entrevista',
+      component: EntrevistaView,
     },
     {
       path: '/posts',

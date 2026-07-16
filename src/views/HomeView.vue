@@ -14,22 +14,20 @@ import homeCollague from '@/assets/img/HomeCollague.png'
   </section>
 
   <section class="mt-[100px]">
-    <div
-      class="text-justify max-w-7xl mx-auto p-3"
-    >
+    <div class="text-justify max-w-7xl mx-auto p-3">
       <div class="font-google space-y-4 text-xl">
-      <p>¡Bienvenido a la ESEN, esta es una guía no oficial creada específicamente para ti!</p>
-      <p>
-         Esperamos que la pases increíble y, sobre todo, que encuentres el apoyo necesario para
-        iniciar esta nueva etapa. Para nosotros, ser universitarios no solo significa estudiar todo
-        el tiempo. Tienes el derecho de divertirte y disfrutar estos 5 años. Para tu suerte, hay
-        muchas actividades que puedes hacer aparte de encerrarte en el CC.
-      </p>
-      <p>
-        Por esa razón, hemos creado esta guía, para que puedas ver todas las cosas emocionantes que
-        hay en el campus. Además, cada ciclo y materia te ofrecen una experiencia diferente y
-        esperamos que esta página web te ayude a ver que significa ser un esenita.
-      </p>
+        <p>¡Bienvenido a la ESEN! esta es una guía no oficial creada específicamente para ti.</p>
+        <p>
+          Esperamos que la pases increíble y sobre todo que encuentres el apoyo necesario para
+          iniciar esta nueva etapa. Para nosotros, ser universitarios no solo significa estudiar
+          todo el tiempo. Tienes el derecho de divertirte y disfrutar estos 5 años. Para tu suerte,
+          hay muchas actividades que puedes hacer aparte de encerrarte en el CC.
+        </p>
+        <p>
+          Por esa razón, hemos creado esta guía, para que puedas ver todas las cosas emocionantes
+          que hay en el campus. Además, cada ciclo y materia te ofrecen una experiencia diferente y
+          esperamos que esta página web te ayude a ver que significa ser un esenita.
+        </p>
       </div>
     </div>
   </section>
@@ -132,7 +130,7 @@ import homeCollague from '@/assets/img/HomeCollague.png'
 
           <p class="text-gray-700 leading-relaxed font-google text-lg">
             La ESEN es mucho más que aulas y tareas. Su campus te ofrece una experiencia rodeada de
-            naturaleza ¡incluso puedes ver animales! Por otro lado, Si hay algo que amamos de
+            naturaleza, ¡incluso puedes ver animales! Por otro lado, Si hay algo que amamos de
             nuestra universidad son las amistades que llegas a hacer. Conectar con alumnos de otros
             años y recibir su apoyo es muy afortunado. Eso te demuestra que no todo es semana 5 y
             11, te mereces darte un tiempo para disfrutar.
@@ -150,12 +148,20 @@ import homeCollague from '@/assets/img/HomeCollague.png'
   </section>
 
   <section class="pl-[210px]" id="comunicacion_grupal">
-    <h2 class="text-4xl font-bold text-esen-blue font-spartan">Así se vive la comunicación entre nosotros...</h2>
+    <h2 class="text-4xl font-bold text-esen-blue font-spartan">
+      Así se vive la comunicación entre nosotros...
+    </h2>
+    <p class="font-google mt-5">
+     El siguiente collage fue diseñado en Canva con imágenes propias del equipo.
+    </p>
     <div>
-      <img
-            src="@/assets/img/comunicación grupal.jpeg"
-            class="w-[1000px]"
-          />
+      <img src="@/assets/img/Collage.svg" class="w-[900px] mt-10 ml-[100px]" />
+    </div>
+    <div class="text-xl">
+      <p class="font-google font-bold mt-10">Nota:</p>
+      <p class="font-google mt-2">
+        Para la elaboración de este sitio web y la escritura de los textos no se utilizó IA.
+      </p>
     </div>
   </section>
 
@@ -168,8 +174,9 @@ import homeCollague from '@/assets/img/HomeCollague.png'
         desarrollador.
       </p>
 
-       <p class="text-gray-300 font-google text-sm mt-2">
-        Las fotografías grupales de las actividades de bienestar son por parte del equipo de Dirección Estudiantil.
+      <p class="text-gray-300 font-google text-sm mt-2">
+        Las fotografías grupales de las actividades de bienestar son por parte del equipo de
+        Dirección Estudiantil.
       </p>
 
       <p class="text-gray-300 font-google text-sm mt-2">

@@ -31,13 +31,13 @@ const memes = [
     author: 'Ariel Cortez',
     profileImage: nosotros3,
     memeImage: meme3,
-    comment: 'Mi primer control fue de 4.7. Al principio si me sentí bastante mal, pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
+    comment: 'Mi primer control fue de 4.7. Al principio sí me sentí bastante mal, pero luego me di cuenta que no era tan grave y que podía mejorar. Ahora ya no me estreso tanto por los controles.',
   },
   {
     author: 'Lisseth Mejía',
     profileImage: nosotros1,
     memeImage: meme4,
-    comment: 'Hasta el momento no he tenido clases con Domínguez, pero debo de admitir que me da risa ver como toda la sección de Domi se reune para hacer actividades culturales y académicas.',
+    comment: 'Hasta el momento no he tenido clases con Domínguez, pero debo de admitir que me da risa ver cómo toda la sección de Domi se reune para hacer actividades culturales y académicas.',
   },
   {
     author: 'Abner González',

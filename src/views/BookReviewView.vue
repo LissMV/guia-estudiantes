@@ -22,9 +22,9 @@ const books = [
     image: libro1,
 
     genre: 'Autoayuda',
-    pages: 96,
+    pages: 206,
     subject: 'Fundamentos de Liderazgo',
-    reviewer: 'Abner Gonzáles',
+    reviewer: 'Abner González',
     title_Review: 'El poder de los hábitos',
     original_Title: 'The 7 Habits of Highly Effective People',
 
