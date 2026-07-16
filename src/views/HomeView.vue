@@ -149,6 +149,16 @@ import homeCollague from '@/assets/img/HomeCollague.png'
     </div>
   </section>
 
+  <section class="pl-[210px]" id="comunicacion_grupal">
+    <h2 class="text-4xl font-bold text-esen-blue font-spartan">Así se vive la comunicación entre nosotros...</h2>
+    <div>
+      <img
+            src="@/assets/img/comunicación grupal.jpeg"
+            class="w-[1000px]"
+          />
+    </div>
+  </section>
+
   <footer class="bg-esen-purple text-white py-8 mt-10">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h3 class="font-spartan text-xl font-semibold mb-3">Créditos y referencias</h3>
